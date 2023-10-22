@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 1px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+
+}
+
+#home-bg-video {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+
+    z-index: -1;
+    background: url(./videos/solo.jpg) no-repeat;
+    background-size: cover;
+}
+
+#home-overlay{
+    background-color: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index:-1;
+}
+
+#heading {
+    color: #f4c613;
+    font-size: 65px;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-left: 100px;
+    display: inline-block;
+}
+
+.container {
+    
+    height: 450px;
+    width: 330px;
+    background: #ffff;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5,);
+    padding: 10px;
+    overflow: auto;
+    margin-top: 30px;
+    margin-left: 90px;
+    margin-right: 100px;
+ 
+  
+    
+    
+}
+
+
+ #input {
+    height: 50px;
+    width: 95%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background: #666;
+    color: #ffff;
+    padding-left:25px;
+    margin-left: 7px;
+    
+}
+
+#input::placeholder {
+    color: #f4c613;
+}
+
+#input:hover {
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+ul li{
+    background: #eee;
+    color:  #333;
+    height:  40px;
+    border-radius: 50px;
+    margin:  10px 0;
+    padding: 10px;
+    position: relative;
+    
+}
+
+
+ul .fa-square-check, .fa-trash{
+    position: absolute;
+    cursor: pointer;
+}
+
+ul .fa-square-check {
+    right: 40px;
+    color: green;
+    
+}
+
+ul .fa-trash {
+    right: 15px;
+    color: #ff0033;
+}
+
+ul .checked{
+    background: lightgreen;
+    text-decoration: line-through;
+    transition: .2s;
+}
